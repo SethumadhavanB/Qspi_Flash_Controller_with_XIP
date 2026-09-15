@@ -5,7 +5,7 @@
 // 
 // Create Date: 26.08.2026 14:19:40
 // Design Name: 
-// Module Name: Sync_Multi
+// Module Name: Sync
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 

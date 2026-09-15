@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-`default_nettype wire
+`default_nettype none
 module Handshake_Reciver(
    input  wire        SCLK,
    input  wire        SRESETn,

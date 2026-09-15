@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-`default_nettype wire
+`default_nettype none
 module Rx_Shift_Reg(
     input wire [3:0] Rx_In,
     input wire Clk,

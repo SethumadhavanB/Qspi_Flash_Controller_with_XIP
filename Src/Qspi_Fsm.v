@@ -57,8 +57,8 @@ module Qspi_Fsm(
     output reg Error,
     output reg Need_Data,
     output wire Write_Data,
-    output reg [1:0] Tx_Line_Width,   // to Tx_Shift_Reg
-    output reg [1:0] Rx_Line_Width    // to Rx_Shift_Reg
+    output reg [1:0] Tx_Line_Width,   
+    output reg [1:0] Rx_Line_Width    
 );
 
     localparam Idle         = 4'd0;
@@ -344,7 +344,6 @@ module Qspi_Fsm(
             default: begin Opcode_Ioen = 4'b0001; Opcode_Count = 5'd7; end
         endcase
 
-        // Address phase length scales with both width and 3/4-byte selection.
         case (Addr_Line)
             2'd0: begin Addr_Ioen = 4'b0001; Addr_Count = Addr_4Byte ? 5'd31 : 5'd23; end
             2'd1: begin Addr_Ioen = 4'b0011; Addr_Count = Addr_4Byte ? 5'd15 : 5'd11; end
@@ -366,7 +365,6 @@ module Qspi_Fsm(
             default: begin Tx_Data_Ioen = 4'b0001; Bit_Count_Max = 3'd7; end
         endcase
 
-        // WIP auto-poll (RDSR1) is always single-line regardless of Data_Line.
         Status_Count = 5'd7;
     end
 
@@ -437,17 +435,9 @@ module Qspi_Fsm(
 
     assign Tx_Byte_Done = (Current == Data_State) && Data_W_En && (Bit_Count == Bit_Count_Max);
     assign Fetch_Data = (Current == Data_State) && Data_W_En && (Bit_Count == Bit_Count_Max - 1'b1);
-    // assign Data_Done = (Current == Data_State) && Data_W_En && (Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max);
-    // Length 0 would wrap to 255 and run 256 bytes; terminate immediately.
-    assign Data_Done = (Current == Data_State) && Data_W_En &&
-                       ((Data_Length == 8'd0) ||
-                        ((Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max)));
+    assign Data_Done = (Current == Data_State) && Data_W_En &&((Data_Length == 8'd0) || ((Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max)));
 
-
-    //assign Read_Done = (Current == Data_State) && Data_R_En && (Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max);
-    assign Read_Done = (Current == Data_State) && Data_R_En &&
-                       ((Data_Length == 8'd0) ||
-                        ((Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max)));
+    assign Read_Done = (Current == Data_State) && Data_R_En &&((Data_Length == 8'd0) || ((Byte_Count == Data_Length - 1'b1) && (Bit_Count == Bit_Count_Max)));
     assign Rx_Byte_Last_Bit = (Current == Data_State) && Data_R_En && (Bit_Count == Bit_Count_Max);
     
     always @(posedge Clk or negedge Reset) begin

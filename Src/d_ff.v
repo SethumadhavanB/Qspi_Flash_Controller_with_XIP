@@ -1,17 +1,17 @@
 `timescale 1ns / 1ps
-
+`default_nettype none
 module d_ff (
-    input  wire clk,      // Clock signal
-    input  wire rst_n,    // Active-low asynchronous reset
-    input  wire d,        // Data input
-    output reg  q         // Data output
+    input  wire clk,      
+    input  wire rst_n,    
+    input  wire d,       
+    output reg  q         
 );
 
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            q <= 1'b0;    // Reset output to 0
+            q <= 1'b0;    
         end else begin
-            q <= d;       // Capture input on rising clock edge
+            q <= d;       
         end
     end
 

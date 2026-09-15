@@ -18,7 +18,7 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-`default_nettype wire
+`default_nettype none
 module Tx_Shift_Reg(
      input wire  Clk,
      input wire  Reset,

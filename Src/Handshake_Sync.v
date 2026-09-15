@@ -18,8 +18,7 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-`default_nettype wire
-
+`default_nettype none
 module Handshake_Sync(
     input wire PCLK,
     input wire PRESETn,
@@ -97,7 +96,7 @@ module Handshake_Sync(
         data_w_en_hold   <= 1'b0;
         data_r_en_hold   <= 1'b0;
         poll_wip_en_hold <= 1'b0;
-        addr_4byte_hold  <= 1'b0; // Fixed typo (was '1 meb')
+        addr_4byte_hold  <= 1'b0;
     end else begin
         if (start_pulse && !REQ && !ACK) begin
             reg_opcode_hold  <= reg_opcode;

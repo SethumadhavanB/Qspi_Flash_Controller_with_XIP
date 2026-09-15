@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-`default_nettype wire
+`default_nettype none
 module fifo_mem #(
     parameter DEPTH = 8,
     parameter WIDTH = 8
@@ -37,7 +37,6 @@ module fifo_mem #(
 
 reg [WIDTH-1:0] mem [DEPTH-1:0];
 
-//assign dout = (rd_clk_en)? mem[rd_ptr]:0;
 always @(posedge rd_clk or negedge rd_rst) begin
     if (!rd_rst)
         dout <={WIDTH{1'b0}};
@@ -45,7 +44,7 @@ always @(posedge rd_clk or negedge rd_rst) begin
         dout <= mem[rd_ptr];
 end
 
-// WRITE
+
 integer i;
 always @(posedge wr_clk or negedge wr_rst) begin
     if (!wr_rst) begin

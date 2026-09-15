@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 `default_nettype none
 module Apb_Slave (
     input  wire PCLK,
@@ -42,7 +43,6 @@ module Apb_Slave (
     wire valid_strb =
         (PADDR == ADDR_CONTROL && PSTRB == 4'b0111) ||
         (PADDR == ADDR_OPCODE  && PSTRB == 4'b0001) ||
-        (PADDR == ADDR_ADDRESS && PSTRB == 4'b0111) ||
         (PADDR == ADDR_ADDRESS && PSTRB == 4'b1111) ||
         (PADDR == ADDR_MODE    && PSTRB == 4'b0001) ||
         (PADDR == ADDR_DUMMY   && PSTRB == 4'b0001) ||
@@ -59,8 +59,6 @@ module Apb_Slave (
     assign reg_re    = access_phase && !PWRITE;
     reg Busy;
 
-
-
     always @(posedge PCLK or negedge PRESETn)
     begin
         if (!PRESETn)
@@ -72,38 +70,36 @@ module Apb_Slave (
         end
         else
         begin
-            // Default PREADY state when idle
-            PREADY  <= 1'b0; 
+            PREADY  <= 1'b0;
             PSLVERR <= 1'b0;
 
             if(Busy)
             begin
                 if (Qspi_done)
                 begin
-                        PREADY <= 1'b0; 
+                        PREADY <= 1'b1;
                         Busy <= 1'b0;
                 end
                 else if (Qspi_Error)
                 begin
-                    PREADY <= 1'b0; 
+                    PREADY <= 1'b1;
                     Busy <= 1'b0;
                     PSLVERR <= 1'b1;
                 end
                     else
-                    PREADY <= 1'b1;
+                    PREADY <= 1'b0;
             end
 
             else if (access_phase)
             begin
                 if (!valid_addr || (PWRITE && !valid_strb))
                 begin
-                    PREADY  <= 1'b1; 
+                    PREADY  <= 1'b1;
                     PSLVERR <= 1'b1;
                 end
-                
+
                 else if (data_access)
                 begin
-                    // Standard AMBA: PREADY=1 when done
                     PREADY <= data_done;
                     if (data_done && !PWRITE)
                         PRDATA <= reg_rdata;
@@ -116,7 +112,7 @@ module Apb_Slave (
 
                 else
                 begin
-                    PREADY <= 1'b0; 
+                    PREADY <= 1'b1;
                     if (!PWRITE)
                         PRDATA <= reg_rdata;
                 end

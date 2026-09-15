@@ -149,17 +149,7 @@ module Qspi_Core(
     .Line_Width(Rx_Line_Width),
     .Rx_Data(Flash_Data)
     );
-    
-  //assign Io[0] = (Ioen[0]) ? Tx_Data[3] : 1'bz;
-   //assign Io[1] = (Ioen[1]) ? Tx_Data[2] : 1'bz;
-   //assign Io[2] = (Ioen[2]) ? Tx_Data[1] : 1'bz;
-   //assign Io[3] = (Ioen[3]) ? Tx_Data[0] : 1'bz;
-   
-    //assign Rx_In[0] = Io[0];
-    //assign Rx_In[1] = Io[1];
-    //assign Rx_In[2] = Io[2];
-    //assign Rx_In[3] = Io[3];
- 
+
     assign WIP = Flash_Data[0];
     assign Rx_Data = Flash_Data;
 
