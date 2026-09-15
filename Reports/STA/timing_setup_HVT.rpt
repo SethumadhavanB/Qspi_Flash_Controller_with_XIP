@@ -1,0 +1,2821 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : qspi_Controller
+Version: S-2021.06-SP4
+Date   : Tue Sep 15 23:50:03 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v25c   Library: saed32hvt_ss0p75v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[15]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2942/Y (OA21X1_HVT)                                    0.39       7.06 r
+  U2944/Y (NAND2X0_HVT)                                   0.21       7.27 f
+  U2945/Y (AO21X1_HVT)                                    0.28       7.55 f
+  U2946/Y (OA222X1_HVT)                                   0.41       7.96 f
+  ahb_xip_inst/tmo_reg[15]/D (DFFARX1_HVT)                0.00       7.96 f
+  data arrival time                                                  7.96
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[15]/CLK (DFFARX1_HVT)              0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.41
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[14]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2942/Y (OA21X1_HVT)                                    0.39       7.06 r
+  U2944/Y (NAND2X0_HVT)                                   0.21       7.27 f
+  U2950/Y (AO22X1_HVT)                                    0.44       7.71 f
+  ahb_xip_inst/tmo_reg[14]/D (DFFARX1_HVT)                0.00       7.71 f
+  data arrival time                                                  7.71
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[14]/CLK (DFFARX1_HVT)              0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[9]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2376/Y (INVX0_HVT)                                     0.25       6.92 f
+  U2960/Y (AO21X1_HVT)                                    0.29       7.21 f
+  U2961/Y (OA222X1_HVT)                                   0.41       7.61 f
+  ahb_xip_inst/tmo_reg[9]/D (DFFARX1_HVT)                 0.00       7.61 f
+  data arrival time                                                  7.61
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[9]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[5]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2376/Y (INVX0_HVT)                                     0.25       6.92 f
+  U2970/Y (AO21X1_HVT)                                    0.29       7.21 f
+  U2971/Y (OA222X1_HVT)                                   0.41       7.61 f
+  ahb_xip_inst/tmo_reg[5]/D (DFFARX1_HVT)                 0.00       7.61 f
+  data arrival time                                                  7.61
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[5]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[3]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2376/Y (INVX0_HVT)                                     0.25       6.92 f
+  U2975/Y (AO21X1_HVT)                                    0.29       7.21 f
+  U2976/Y (OA222X1_HVT)                                   0.41       7.61 f
+  ahb_xip_inst/tmo_reg[3]/D (DFFARX1_HVT)                 0.00       7.61 f
+  data arrival time                                                  7.61
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[3]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[7]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2376/Y (INVX0_HVT)                                     0.25       6.92 f
+  U2965/Y (AO21X1_HVT)                                    0.29       7.21 f
+  U2966/Y (OA222X1_HVT)                                   0.41       7.61 f
+  ahb_xip_inst/tmo_reg[7]/D (DFFARX1_HVT)                 0.00       7.61 f
+  data arrival time                                                  7.61
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[7]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[11]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2376/Y (INVX0_HVT)                                     0.25       6.92 f
+  U2955/Y (AO21X1_HVT)                                    0.29       7.21 f
+  U2956/Y (OA222X1_HVT)                                   0.41       7.61 f
+  ahb_xip_inst/tmo_reg[11]/D (DFFARX1_HVT)                0.00       7.61 f
+  data arrival time                                                  7.61
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[11]/CLK (DFFARX1_HVT)              0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -7.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[12]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2952/Y (OA221X1_HVT)                                   0.45       7.12 r
+  U2954/Y (OAI22X1_HVT)                                   0.51       7.63 f
+  ahb_xip_inst/tmo_reg[12]/D (DFFARX1_HVT)                0.00       7.63 f
+  data arrival time                                                  7.63
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[12]/CLK (DFFARX1_HVT)              0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.79
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[10]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2957/Y (OA221X1_HVT)                                   0.45       7.12 r
+  U2959/Y (OAI22X1_HVT)                                   0.51       7.63 f
+  ahb_xip_inst/tmo_reg[10]/D (DFFARX1_HVT)                0.00       7.63 f
+  data arrival time                                                  7.63
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[10]/CLK (DFFARX1_HVT)              0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.79
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[8]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2962/Y (OA221X1_HVT)                                   0.45       7.12 r
+  U2964/Y (OAI22X1_HVT)                                   0.51       7.63 f
+  ahb_xip_inst/tmo_reg[8]/D (DFFARX1_HVT)                 0.00       7.63 f
+  data arrival time                                                  7.63
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[8]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.79
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[6]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2967/Y (OA221X1_HVT)                                   0.45       7.12 r
+  U2969/Y (OAI22X1_HVT)                                   0.51       7.63 f
+  ahb_xip_inst/tmo_reg[6]/D (DFFARX1_HVT)                 0.00       7.63 f
+  data arrival time                                                  7.63
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[6]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.79
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[4]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2941/Y (OA21X1_HVT)                                    0.43       6.68 r
+  U2972/Y (OA221X1_HVT)                                   0.45       7.12 r
+  U2974/Y (OAI22X1_HVT)                                   0.51       7.63 f
+  ahb_xip_inst/tmo_reg[4]/D (DFFARX1_HVT)                 0.00       7.63 f
+  data arrival time                                                  7.63
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/tmo_reg[4]/CLK (DFFARX1_HVT)               0.00       9.80 r
+  library setup time                                     -0.38       9.42
+  data required time                                                 9.42
+  --------------------------------------------------------------------------
+  data required time                                                 9.42
+  data arrival time                                                 -7.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.79
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[2]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4956/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[2]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[2]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[3]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4957/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[3]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[3]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[4]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4958/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[4]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[4]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[5]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4959/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[5]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[5]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[6]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4960/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[6]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[6]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[7]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4961/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[7]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[7]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[8]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4962/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[8]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[8]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: HADDR[23] (input port clocked by HCLK)
+  Endpoint: ahb_xip_inst/req_addr_reg[9]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  HADDR[23] (in)                                          0.00       4.00 f
+  U2651/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2652/Y (AND4X1_HVT)                                    0.56       5.01 r
+  U2653/Y (NAND4X0_HVT)                                   0.54       5.55 f
+  U2654/Y (INVX0_HVT)                                     0.30       5.86 r
+  U2655/Y (AND2X1_HVT)                                    0.38       6.24 r
+  U2656/Y (NAND3X2_HVT)                                   0.60       6.84 f
+  U2657/Y (INVX2_HVT)                                     0.27       7.11 r
+  U4963/Y (AO22X1_HVT)                                    0.44       7.55 r
+  ahb_xip_inst/req_addr_reg[9]/D (DFFARX1_HVT)            0.00       7.55 r
+  data arrival time                                                  7.55
+
+  clock HCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  ahb_xip_inst/req_addr_reg[9]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.44       9.36
+  data required time                                                 9.36
+  --------------------------------------------------------------------------
+  data required time                                                 9.36
+  data arrival time                                                 -7.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.80
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2420/Y (AOI22X1_HVT)                                   0.69       9.19 f
+  U2779/Y (NAND3X0_HVT)                                   0.12       9.31 r
+  apb_slave_inst/PRDATA_reg[0]/D (DFFARX1_HVT)            0.00       9.31 r
+  data arrival time                                                  9.31
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[0]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[16]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4031/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[16]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[16]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[15]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4032/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[15]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[15]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[14]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4033/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[14]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[14]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[13]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4034/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[13]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[13]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[12]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4035/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[12]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[12]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[11]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4036/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[11]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[11]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[10]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4037/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[10]/D (DFFARX1_HVT)           0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[10]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[9]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4038/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[9]/D (DFFARX1_HVT)            0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[9]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[8]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U4039/Y (AO222X1_HVT)                                   0.69       9.20 r
+  apb_slave_inst/PRDATA_reg[8]/D (DFFARX1_HVT)            0.00       9.20 r
+  data arrival time                                                  9.20
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[8]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.48       9.32
+  data required time                                                 9.32
+  --------------------------------------------------------------------------
+  data required time                                                 9.32
+  data arrival time                                                 -9.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[7]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2769/Y (AOI22X1_HVT)                                   0.62       9.12 f
+  U2774/Y (NAND3X0_HVT)                                   0.12       9.24 r
+  apb_slave_inst/PRDATA_reg[7]/D (DFFARX1_HVT)            0.00       9.24 r
+  data arrival time                                                  9.24
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[7]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[6]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2763/Y (AOI22X1_HVT)                                   0.62       9.12 f
+  U2768/Y (NAND3X0_HVT)                                   0.12       9.24 r
+  apb_slave_inst/PRDATA_reg[6]/D (DFFARX1_HVT)            0.00       9.24 r
+  data arrival time                                                  9.24
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[6]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[4]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2751/Y (AOI22X1_HVT)                                   0.62       9.12 f
+  U2756/Y (NAND3X0_HVT)                                   0.12       9.24 r
+  apb_slave_inst/PRDATA_reg[4]/D (DFFARX1_HVT)            0.00       9.24 r
+  data arrival time                                                  9.24
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[4]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[2]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2739/Y (AOI22X1_HVT)                                   0.62       9.12 f
+  U2744/Y (NAND3X0_HVT)                                   0.12       9.24 r
+  apb_slave_inst/PRDATA_reg[2]/D (DFFARX1_HVT)            0.00       9.24 r
+  data arrival time                                                  9.24
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[2]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2343/Y (INVX0_HVT)                                     0.30       7.12 r
+  U2728/Y (AND4X1_HVT)                                    0.81       7.93 r
+  U2381/Y (INVX0_HVT)                                     0.23       8.17 f
+  U2380/Y (INVX0_HVT)                                     0.34       8.51 r
+  U2421/Y (AOI22X1_HVT)                                   0.62       9.12 f
+  U2738/Y (NAND3X0_HVT)                                   0.12       9.24 r
+  apb_slave_inst/PRDATA_reg[1]/D (DFFARX1_HVT)            0.00       9.24 r
+  data arrival time                                                  9.24
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[1]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.43       9.37
+  data required time                                                 9.37
+  --------------------------------------------------------------------------
+  data required time                                                 9.37
+  data arrival time                                                 -9.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: rx_fifo_inst/I2/rd_ptr_reg[8]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2434/Y (NOR4X0_HVT)                                    0.56       6.42 r
+  rx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_0)       0.00       6.42 r
+  rx_fifo_inst/U16/Y (AND2X1_HVT)                         0.37       6.78 r
+  rx_fifo_inst/U14/Y (AND2X1_HVT)                         0.36       7.14 r
+  rx_fifo_inst/U67/Y (AND2X1_HVT)                         0.28       7.42 r
+  rx_fifo_inst/U69/Y (NAND2X0_HVT)                        0.28       7.70 f
+  rx_fifo_inst/U11/Y (OR3X1_HVT)                          0.44       8.15 f
+  rx_fifo_inst/U13/Y (INVX0_HVT)                          0.14       8.29 r
+  rx_fifo_inst/U107/Y (NAND2X0_HVT)                       0.21       8.50 f
+  rx_fifo_inst/U108/SO (HADDX1_HVT)                       0.60       9.09 r
+  rx_fifo_inst/I2/rd_ptr_reg[8]/D (DFFARX1_HVT)           0.00       9.09 r
+  data arrival time                                                  9.09
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  rx_fifo_inst/I2/rd_ptr_reg[8]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.42       9.38
+  data required time                                                 9.38
+  --------------------------------------------------------------------------
+  data required time                                                 9.38
+  data arrival time                                                 -9.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: tx_fifo_inst/s1/ff2_reg[7]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_reg[8]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/s1/ff2_reg[7]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  tx_fifo_inst/s1/ff2_reg[7]/Q (DFFARX1_HVT)              0.86       0.86 r
+  tx_fifo_inst/U15/SO (HADDX1_HVT)                        0.63       1.49 f
+  tx_fifo_inst/U16/S (FADDX1_HVT)                         0.84       2.33 r
+  tx_fifo_inst/U17/SO (HADDX1_HVT)                        0.60       2.94 f
+  tx_fifo_inst/U4/Y (INVX1_HVT)                           0.16       3.10 r
+  tx_fifo_inst/U18/S (FADDX1_HVT)                         0.77       3.86 f
+  tx_fifo_inst/U1/Y (INVX1_HVT)                           0.16       4.02 r
+  tx_fifo_inst/U19/SO (HADDX1_HVT)                        0.57       4.59 f
+  tx_fifo_inst/U21/Y (NAND2X0_HVT)                        0.18       4.77 r
+  tx_fifo_inst/U35/Y (AO221X1_HVT)                        0.50       5.27 r
+  tx_fifo_inst/U36/Y (AND2X1_HVT)                         0.41       5.67 r
+  tx_fifo_inst/U98/Y (AND4X1_HVT)                         0.66       6.33 r
+  tx_fifo_inst/U99/Y (NAND2X0_HVT)                        0.27       6.60 f
+  tx_fifo_inst/U9/Y (INVX0_HVT)                           0.19       6.79 r
+  tx_fifo_inst/U100/Y (NAND2X0_HVT)                       0.22       7.01 f
+  tx_fifo_inst/U8/Y (INVX0_HVT)                           0.18       7.19 r
+  tx_fifo_inst/U101/Y (NAND2X0_HVT)                       0.22       7.41 f
+  tx_fifo_inst/U7/Y (INVX0_HVT)                           0.18       7.59 r
+  tx_fifo_inst/U102/Y (NAND2X0_HVT)                       0.22       7.81 f
+  tx_fifo_inst/U6/Y (INVX0_HVT)                           0.19       8.00 r
+  tx_fifo_inst/U103/Y (NAND2X0_HVT)                       0.25       8.26 f
+  tx_fifo_inst/U104/SO (HADDX1_HVT)                       0.62       8.88 r
+  tx_fifo_inst/I1/wr_ptr_reg[8]/D (DFFARX1_HVT)           0.00       8.88 r
+  data arrival time                                                  8.88
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  tx_fifo_inst/I1/wr_ptr_reg[8]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.42       9.38
+  data required time                                                 9.38
+  --------------------------------------------------------------------------
+  data required time                                                 9.38
+  data arrival time                                                 -8.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: rx_fifo_inst/I2/rd_ptr_reg[7]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2434/Y (NOR4X0_HVT)                                    0.56       6.42 r
+  rx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_0)       0.00       6.42 r
+  rx_fifo_inst/U16/Y (AND2X1_HVT)                         0.37       6.78 r
+  rx_fifo_inst/U14/Y (AND2X1_HVT)                         0.36       7.14 r
+  rx_fifo_inst/U67/Y (AND2X1_HVT)                         0.28       7.42 r
+  rx_fifo_inst/U69/Y (NAND2X0_HVT)                        0.28       7.70 f
+  rx_fifo_inst/U11/Y (OR3X1_HVT)                          0.44       8.15 f
+  rx_fifo_inst/U13/Y (INVX0_HVT)                          0.14       8.29 r
+  rx_fifo_inst/U107/Y (NAND2X0_HVT)                       0.21       8.50 f
+  rx_fifo_inst/U6/Y (OA21X1_HVT)                          0.36       8.86 f
+  rx_fifo_inst/I2/rd_ptr_reg[7]/D (DFFARX1_HVT)           0.00       8.86 f
+  data arrival time                                                  8.86
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  rx_fifo_inst/I2/rd_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00       9.80 r
+  library setup time                                     -0.39       9.41
+  data required time                                                 9.41
+  --------------------------------------------------------------------------
+  data required time                                                 9.41
+  data arrival time                                                 -8.86
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[5]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2379/Y (INVX0_HVT)                                     0.56       7.38 r
+  U2316/Y (INVX2_HVT)                                     0.50       7.87 f
+  U2760/Y (AOI222X1_HVT)                                  0.57       8.45 r
+  U2762/Y (NAND3X0_HVT)                                   0.25       8.70 f
+  apb_slave_inst/PRDATA_reg[5]/D (DFFARX1_HVT)            0.00       8.70 f
+  data arrival time                                                  8.70
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[5]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.47       9.33
+  data required time                                                 9.33
+  --------------------------------------------------------------------------
+  data required time                                                 9.33
+  data arrival time                                                 -8.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: PADDR[5] (input port clocked by PCLK)
+  Endpoint: apb_slave_inst/PRDATA_reg[3]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  PADDR[5] (in)                                           0.00       4.00 f
+  U2418/Y (NOR3X0_HVT)                                    0.45       4.45 r
+  U2416/Y (AND2X1_HVT)                                    0.28       4.73 r
+  U2433/Y (AND4X1_HVT)                                    0.58       5.32 r
+  U2284/Y (NAND3X1_HVT)                                   0.54       5.86 f
+  U2419/Y (MUX21X1_HVT)                                   0.47       6.33 r
+  U2726/Y (NAND4X0_HVT)                                   0.49       6.82 f
+  U2379/Y (INVX0_HVT)                                     0.56       7.38 r
+  U2316/Y (INVX2_HVT)                                     0.50       7.87 f
+  U2748/Y (AOI222X1_HVT)                                  0.57       8.45 r
+  U2750/Y (NAND3X0_HVT)                                   0.25       8.70 f
+  apb_slave_inst/PRDATA_reg[3]/D (DFFARX1_HVT)            0.00       8.70 f
+  data arrival time                                                  8.70
+
+  clock PCLK (rise edge)                                 10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  apb_slave_inst/PRDATA_reg[3]/CLK (DFFARX1_HVT)          0.00       9.80 r
+  library setup time                                     -0.47       9.33
+  data required time                                                 9.33
+  --------------------------------------------------------------------------
+  data required time                                                 9.33
+  data arrival time                                                 -8.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: SCLK (clock source 'SCLK')
+  Endpoint: spi_sclk (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCLK (fall edge)                  10.00      10.00
+  SCLK (in)                                0.00 #    10.00 f
+  I_10/Y (INVX0_HVT)                       0.02 #    10.02 r
+  spi_sclk (out)                           0.00      10.02 r
+  data arrival time                                  10.02
+
+  clock SCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.20      19.80
+  output external delay                   -8.00      11.80
+  data required time                                 11.80
+  -----------------------------------------------------------
+  data required time                                 11.80
+  data arrival time                                 -10.02
+  -----------------------------------------------------------
+  slack (MET)                                         1.78
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: spi_cs_n (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.87       0.87 f
+  U2494/Y (INVX2_HVT)                                     0.33       1.21 r
+  U2536/Y (INVX2_HVT)                                     0.39       1.60 f
+  U2849/Y (OR2X1_HVT)                                     0.50       2.10 f
+  qspi_ctrl_inst/Dummy[1] (Qspi_Core)                     0.00       2.10 f
+  qspi_ctrl_inst/U91/Y (INVX0_HVT)                        0.20       2.30 r
+  qspi_ctrl_inst/U93/Y (NAND3X0_HVT)                      0.45       2.75 f
+  qspi_ctrl_inst/U94/Y (OR3X1_HVT)                        0.48       3.23 f
+  qspi_ctrl_inst/U95/Y (OR3X1_HVT)                        0.36       3.59 f
+  qspi_ctrl_inst/U96/Y (OA21X1_HVT)                       0.40       3.98 f
+  qspi_ctrl_inst/U8/Y (INVX0_HVT)                         0.18       4.16 r
+  qspi_ctrl_inst/U97/Y (NAND4X0_HVT)                      0.50       4.66 f
+  qspi_ctrl_inst/U399/Y (NAND4X0_HVT)                     0.40       5.06 r
+  qspi_ctrl_inst/U400/Y (NAND2X0_HVT)                     0.23       5.29 f
+  qspi_ctrl_inst/CS (Qspi_Core)                           0.00       5.29 f
+  spi_cs_n (out)                                          0.00       5.29 f
+  data arrival time                                                  5.29
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  output external delay                                  -8.00      11.80
+  data required time                                                11.80
+  --------------------------------------------------------------------------
+  data required time                                                11.80
+  data arrival time                                                 -5.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.51
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Io[3] (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.87       0.87 f
+  U2494/Y (INVX2_HVT)                                     0.33       1.21 r
+  U2536/Y (INVX2_HVT)                                     0.39       1.60 f
+  U2854/Y (INVX2_HVT)                                     0.39       1.99 r
+  U2535/Y (AND2X1_HVT)                                    0.48       2.47 r
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.47 r
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.15       2.62 f
+  qspi_ctrl_inst/U387/Y (NAND2X0_HVT)                     0.15       2.77 r
+  qspi_ctrl_inst/U388/Y (NAND3X0_HVT)                     0.34       3.11 f
+  qspi_ctrl_inst/U392/Y (AND2X1_HVT)                      0.39       3.50 f
+  qspi_ctrl_inst/U396/Y (OA22X1_HVT)                      0.45       3.96 f
+  qspi_ctrl_inst/U397/Y (NAND2X0_HVT)                     0.23       4.19 r
+  qspi_ctrl_inst/Ioen[3] (Qspi_Core)                      0.00       4.19 r
+  Io_tri[3]/Y (TNBUFFX1_HVT)                              0.44       4.63 f
+  Io[3] (inout)                                           0.00       4.63 f
+  data arrival time                                                  4.63
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  output external delay                                  -8.00      11.80
+  data required time                                                11.80
+  --------------------------------------------------------------------------
+  data required time                                                11.80
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.17
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Io[2] (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.87       0.87 f
+  U2494/Y (INVX2_HVT)                                     0.33       1.21 r
+  U2536/Y (INVX2_HVT)                                     0.39       1.60 f
+  U2854/Y (INVX2_HVT)                                     0.39       1.99 r
+  U2535/Y (AND2X1_HVT)                                    0.48       2.47 r
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.47 r
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.15       2.62 f
+  qspi_ctrl_inst/U387/Y (NAND2X0_HVT)                     0.15       2.77 r
+  qspi_ctrl_inst/U388/Y (NAND3X0_HVT)                     0.34       3.11 f
+  qspi_ctrl_inst/U392/Y (AND2X1_HVT)                      0.39       3.50 f
+  qspi_ctrl_inst/U396/Y (OA22X1_HVT)                      0.45       3.96 f
+  qspi_ctrl_inst/U397/Y (NAND2X0_HVT)                     0.23       4.19 r
+  qspi_ctrl_inst/Ioen[3] (Qspi_Core)                      0.00       4.19 r
+  Io_tri[2]/Y (TNBUFFX1_HVT)                              0.44       4.63 f
+  Io[2] (inout)                                           0.00       4.63 f
+  data arrival time                                                  4.63
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  output external delay                                  -8.00      11.80
+  data required time                                                11.80
+  --------------------------------------------------------------------------
+  data required time                                                11.80
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.17
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Io[1] (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.87       0.87 f
+  U2494/Y (INVX2_HVT)                                     0.33       1.21 r
+  U2536/Y (INVX2_HVT)                                     0.39       1.60 f
+  U2854/Y (INVX2_HVT)                                     0.39       1.99 r
+  U2535/Y (AND2X1_HVT)                                    0.48       2.47 r
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.47 r
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.15       2.62 f
+  qspi_ctrl_inst/U387/Y (NAND2X0_HVT)                     0.15       2.77 r
+  qspi_ctrl_inst/U388/Y (NAND3X0_HVT)                     0.34       3.11 f
+  qspi_ctrl_inst/U392/Y (AND2X1_HVT)                      0.39       3.50 f
+  qspi_ctrl_inst/U393/Y (OA22X1_HVT)                      0.40       3.90 f
+  qspi_ctrl_inst/U394/Y (NAND2X0_HVT)                     0.21       4.12 r
+  qspi_ctrl_inst/Ioen[1] (Qspi_Core)                      0.00       4.12 r
+  Io_tri[1]/Y (TNBUFFX1_HVT)                              0.40       4.52 f
+  Io[1] (inout)                                           0.00       4.52 f
+  data arrival time                                                  4.52
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  output external delay                                  -8.00      11.80
+  data required time                                                11.80
+  --------------------------------------------------------------------------
+  data required time                                                11.80
+  data arrival time                                                 -4.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.28
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Io[0] (output port clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2835/Y (AND2X1_HVT)                                    0.42       2.50 f
+  qspi_ctrl_inst/Mode_Line[0] (Qspi_Core)                 0.00       2.50 f
+  qspi_ctrl_inst/U68/Y (AO22X1_HVT)                       0.38       2.88 f
+  qspi_ctrl_inst/U69/Y (OR2X1_HVT)                        0.28       3.16 f
+  qspi_ctrl_inst/U70/Y (INVX0_HVT)                        0.12       3.28 r
+  qspi_ctrl_inst/U72/Y (OA221X1_HVT)                      0.53       3.81 r
+  qspi_ctrl_inst/U73/Y (AO21X1_HVT)                       0.25       4.05 r
+  qspi_ctrl_inst/Tx_Data[0] (Qspi_Core)                   0.00       4.05 r
+  Io_tri[0]/Y (TNBUFFX1_HVT)                              0.38       4.43 r
+  Io[0] (inout)                                           0.00       4.43 r
+  data arrival time                                                  4.43
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  output external delay                                  -8.00      11.80
+  data required time                                                11.80
+  --------------------------------------------------------------------------
+  data required time                                                11.80
+  data arrival time                                                 -4.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.37
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_reg[8]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2841/Y (AND2X1_HVT)                                    0.42       2.50 f
+  qspi_ctrl_inst/Data_Length[1] (Qspi_Core)               0.00       2.50 f
+  qspi_ctrl_inst/U349/Y (INVX0_HVT)                       0.14       2.64 r
+  qspi_ctrl_inst/U350/Y (NAND3X0_HVT)                     0.40       3.04 f
+  qspi_ctrl_inst/U351/Y (OR2X1_HVT)                       0.46       3.50 f
+  qspi_ctrl_inst/U352/Y (OR2X1_HVT)                       0.28       3.79 f
+  qspi_ctrl_inst/U353/Y (INVX0_HVT)                       0.13       3.91 r
+  qspi_ctrl_inst/U354/Y (NAND2X0_HVT)                     0.32       4.23 f
+  qspi_ctrl_inst/U375/Y (OR2X1_HVT)                       0.40       4.64 f
+  qspi_ctrl_inst/U16/Y (INVX0_HVT)                        0.12       4.76 r
+  qspi_ctrl_inst/U377/Y (OAI22X1_HVT)                     0.43       5.19 f
+  qspi_ctrl_inst/U381/Y (NAND4X0_HVT)                     0.13       5.32 r
+  qspi_ctrl_inst/U382/Y (OR3X1_HVT)                       0.31       5.63 r
+  qspi_ctrl_inst/U383/Y (NAND3X0_HVT)                     0.30       5.92 f
+  qspi_ctrl_inst/U384/Y (OA221X1_HVT)                     0.40       6.32 f
+  qspi_ctrl_inst/U385/Y (OAI22X1_HVT)                     0.48       6.80 r
+  qspi_ctrl_inst/Need_Data (Qspi_Core)                    0.00       6.80 r
+  U2787/Y (AND2X1_HVT)                                    0.24       7.04 r
+  tx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_1)       0.00       7.04 r
+  tx_fifo_inst/U60/Y (AND2X1_HVT)                         0.36       7.40 r
+  tx_fifo_inst/U61/Y (AND4X1_HVT)                         0.70       8.10 r
+  tx_fifo_inst/U62/Y (NAND2X0_HVT)                        0.27       8.38 f
+  tx_fifo_inst/U80/Y (INVX0_HVT)                          0.18       8.56 r
+  tx_fifo_inst/U81/Y (NAND2X0_HVT)                        0.22       8.78 f
+  tx_fifo_inst/U82/Y (INVX0_HVT)                          0.18       8.96 r
+  tx_fifo_inst/U83/Y (NAND2X0_HVT)                        0.22       9.18 f
+  tx_fifo_inst/U84/Y (INVX0_HVT)                          0.18       9.36 r
+  tx_fifo_inst/U85/Y (NAND2X0_HVT)                        0.22       9.58 f
+  tx_fifo_inst/U86/Y (INVX0_HVT)                          0.18       9.76 r
+  tx_fifo_inst/U87/Y (NAND2X0_HVT)                        0.25      10.01 f
+  tx_fifo_inst/U88/SO (HADDX1_HVT)                        0.61      10.62 r
+  tx_fifo_inst/I2/rd_ptr_reg[8]/D (DFFARX1_HVT)           0.00      10.62 r
+  data arrival time                                                 10.62
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  tx_fifo_inst/I2/rd_ptr_reg[8]/CLK (DFFARX1_HVT)         0.00      19.80 r
+  library setup time                                     -0.42      19.38
+  data required time                                                19.38
+  --------------------------------------------------------------------------
+  data required time                                                19.38
+  data arrival time                                                -10.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.76
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_reg[7]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2841/Y (AND2X1_HVT)                                    0.42       2.50 f
+  qspi_ctrl_inst/Data_Length[1] (Qspi_Core)               0.00       2.50 f
+  qspi_ctrl_inst/U349/Y (INVX0_HVT)                       0.14       2.64 r
+  qspi_ctrl_inst/U350/Y (NAND3X0_HVT)                     0.40       3.04 f
+  qspi_ctrl_inst/U351/Y (OR2X1_HVT)                       0.46       3.50 f
+  qspi_ctrl_inst/U352/Y (OR2X1_HVT)                       0.28       3.79 f
+  qspi_ctrl_inst/U353/Y (INVX0_HVT)                       0.13       3.91 r
+  qspi_ctrl_inst/U354/Y (NAND2X0_HVT)                     0.32       4.23 f
+  qspi_ctrl_inst/U375/Y (OR2X1_HVT)                       0.40       4.64 f
+  qspi_ctrl_inst/U16/Y (INVX0_HVT)                        0.12       4.76 r
+  qspi_ctrl_inst/U377/Y (OAI22X1_HVT)                     0.43       5.19 f
+  qspi_ctrl_inst/U381/Y (NAND4X0_HVT)                     0.13       5.32 r
+  qspi_ctrl_inst/U382/Y (OR3X1_HVT)                       0.31       5.63 r
+  qspi_ctrl_inst/U383/Y (NAND3X0_HVT)                     0.30       5.92 f
+  qspi_ctrl_inst/U384/Y (OA221X1_HVT)                     0.40       6.32 f
+  qspi_ctrl_inst/U385/Y (OAI22X1_HVT)                     0.48       6.80 r
+  qspi_ctrl_inst/Need_Data (Qspi_Core)                    0.00       6.80 r
+  U2787/Y (AND2X1_HVT)                                    0.24       7.04 r
+  tx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_1)       0.00       7.04 r
+  tx_fifo_inst/U60/Y (AND2X1_HVT)                         0.36       7.40 r
+  tx_fifo_inst/U61/Y (AND4X1_HVT)                         0.70       8.10 r
+  tx_fifo_inst/U62/Y (NAND2X0_HVT)                        0.27       8.38 f
+  tx_fifo_inst/U80/Y (INVX0_HVT)                          0.18       8.56 r
+  tx_fifo_inst/U81/Y (NAND2X0_HVT)                        0.22       8.78 f
+  tx_fifo_inst/U82/Y (INVX0_HVT)                          0.18       8.96 r
+  tx_fifo_inst/U83/Y (NAND2X0_HVT)                        0.22       9.18 f
+  tx_fifo_inst/U84/Y (INVX0_HVT)                          0.18       9.36 r
+  tx_fifo_inst/U85/Y (NAND2X0_HVT)                        0.22       9.58 f
+  tx_fifo_inst/U86/Y (INVX0_HVT)                          0.18       9.76 r
+  tx_fifo_inst/U87/Y (NAND2X0_HVT)                        0.25      10.01 f
+  tx_fifo_inst/U97/Y (OA21X1_HVT)                         0.38      10.39 f
+  tx_fifo_inst/I2/rd_ptr_reg[7]/D (DFFARX1_HVT)           0.00      10.39 f
+  data arrival time                                                 10.39
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  tx_fifo_inst/I2/rd_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00      19.80 r
+  library setup time                                     -0.39      19.41
+  data required time                                                19.41
+  --------------------------------------------------------------------------
+  data required time                                                19.41
+  data arrival time                                                -10.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_reg[6]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2841/Y (AND2X1_HVT)                                    0.42       2.50 f
+  qspi_ctrl_inst/Data_Length[1] (Qspi_Core)               0.00       2.50 f
+  qspi_ctrl_inst/U349/Y (INVX0_HVT)                       0.14       2.64 r
+  qspi_ctrl_inst/U350/Y (NAND3X0_HVT)                     0.40       3.04 f
+  qspi_ctrl_inst/U351/Y (OR2X1_HVT)                       0.46       3.50 f
+  qspi_ctrl_inst/U352/Y (OR2X1_HVT)                       0.28       3.79 f
+  qspi_ctrl_inst/U353/Y (INVX0_HVT)                       0.13       3.91 r
+  qspi_ctrl_inst/U354/Y (NAND2X0_HVT)                     0.32       4.23 f
+  qspi_ctrl_inst/U375/Y (OR2X1_HVT)                       0.40       4.64 f
+  qspi_ctrl_inst/U16/Y (INVX0_HVT)                        0.12       4.76 r
+  qspi_ctrl_inst/U377/Y (OAI22X1_HVT)                     0.43       5.19 f
+  qspi_ctrl_inst/U381/Y (NAND4X0_HVT)                     0.13       5.32 r
+  qspi_ctrl_inst/U382/Y (OR3X1_HVT)                       0.31       5.63 r
+  qspi_ctrl_inst/U383/Y (NAND3X0_HVT)                     0.30       5.92 f
+  qspi_ctrl_inst/U384/Y (OA221X1_HVT)                     0.40       6.32 f
+  qspi_ctrl_inst/U385/Y (OAI22X1_HVT)                     0.48       6.80 r
+  qspi_ctrl_inst/Need_Data (Qspi_Core)                    0.00       6.80 r
+  U2787/Y (AND2X1_HVT)                                    0.24       7.04 r
+  tx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_1)       0.00       7.04 r
+  tx_fifo_inst/U60/Y (AND2X1_HVT)                         0.36       7.40 r
+  tx_fifo_inst/U61/Y (AND4X1_HVT)                         0.70       8.10 r
+  tx_fifo_inst/U62/Y (NAND2X0_HVT)                        0.27       8.38 f
+  tx_fifo_inst/U80/Y (INVX0_HVT)                          0.18       8.56 r
+  tx_fifo_inst/U81/Y (NAND2X0_HVT)                        0.22       8.78 f
+  tx_fifo_inst/U82/Y (INVX0_HVT)                          0.18       8.96 r
+  tx_fifo_inst/U83/Y (NAND2X0_HVT)                        0.22       9.18 f
+  tx_fifo_inst/U84/Y (INVX0_HVT)                          0.18       9.36 r
+  tx_fifo_inst/U85/Y (NAND2X0_HVT)                        0.22       9.58 f
+  tx_fifo_inst/U96/Y (OA21X1_HVT)                         0.34       9.93 f
+  tx_fifo_inst/I2/rd_ptr_reg[6]/D (DFFARX1_HVT)           0.00       9.93 f
+  data arrival time                                                  9.93
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  tx_fifo_inst/I2/rd_ptr_reg[6]/CLK (DFFARX1_HVT)         0.00      19.80 r
+  library setup time                                     -0.39      19.41
+  data required time                                                19.41
+  --------------------------------------------------------------------------
+  data required time                                                19.41
+  data arrival time                                                 -9.93
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.49
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[24]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U298/Y (AOI22X1_HVT)                     0.70       8.96 f
+  qspi_ctrl_inst/U299/Y (AND4X1_HVT)                      0.41       9.37 f
+  qspi_ctrl_inst/U301/Y (NAND3X0_HVT)                     0.19       9.55 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[24]/D (DFFARX1_HVT)
+                                                          0.00       9.55 r
+  data arrival time                                                  9.55
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[24]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.81
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[26]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U284/Y (AOI22X1_HVT)                     0.70       8.96 f
+  qspi_ctrl_inst/U285/Y (AND4X1_HVT)                      0.41       9.37 f
+  qspi_ctrl_inst/U287/Y (NAND3X0_HVT)                     0.19       9.55 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[26]/D (DFFARX1_HVT)
+                                                          0.00       9.55 r
+  data arrival time                                                  9.55
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[26]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.81
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_reg[5]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2841/Y (AND2X1_HVT)                                    0.42       2.50 f
+  qspi_ctrl_inst/Data_Length[1] (Qspi_Core)               0.00       2.50 f
+  qspi_ctrl_inst/U349/Y (INVX0_HVT)                       0.14       2.64 r
+  qspi_ctrl_inst/U350/Y (NAND3X0_HVT)                     0.40       3.04 f
+  qspi_ctrl_inst/U351/Y (OR2X1_HVT)                       0.46       3.50 f
+  qspi_ctrl_inst/U352/Y (OR2X1_HVT)                       0.28       3.79 f
+  qspi_ctrl_inst/U353/Y (INVX0_HVT)                       0.13       3.91 r
+  qspi_ctrl_inst/U354/Y (NAND2X0_HVT)                     0.32       4.23 f
+  qspi_ctrl_inst/U375/Y (OR2X1_HVT)                       0.40       4.64 f
+  qspi_ctrl_inst/U16/Y (INVX0_HVT)                        0.12       4.76 r
+  qspi_ctrl_inst/U376/Y (NAND2X0_HVT)                     0.17       4.93 f
+  qspi_ctrl_inst/U377/Y (OAI22X1_HVT)                     0.40       5.34 r
+  qspi_ctrl_inst/U381/Y (NAND4X0_HVT)                     0.33       5.67 f
+  qspi_ctrl_inst/U382/Y (OR3X1_HVT)                       0.45       6.12 f
+  qspi_ctrl_inst/U383/Y (NAND3X0_HVT)                     0.16       6.28 r
+  qspi_ctrl_inst/U384/Y (OA221X1_HVT)                     0.40       6.68 r
+  qspi_ctrl_inst/U385/Y (OAI22X1_HVT)                     0.45       7.13 f
+  qspi_ctrl_inst/Need_Data (Qspi_Core)                    0.00       7.13 f
+  U2787/Y (AND2X1_HVT)                                    0.21       7.34 f
+  tx_fifo_inst/rd_en (Async_FIFO_DEPTH256_WIDTH8_1)       0.00       7.34 f
+  tx_fifo_inst/U60/Y (AND2X1_HVT)                         0.33       7.67 f
+  tx_fifo_inst/U61/Y (AND4X1_HVT)                         0.57       8.24 f
+  tx_fifo_inst/U62/Y (NAND2X0_HVT)                        0.24       8.48 r
+  tx_fifo_inst/U80/Y (INVX0_HVT)                          0.16       8.64 f
+  tx_fifo_inst/U81/Y (NAND2X0_HVT)                        0.18       8.82 r
+  tx_fifo_inst/U82/Y (INVX0_HVT)                          0.16       8.97 f
+  tx_fifo_inst/U83/Y (NAND2X0_HVT)                        0.18       9.15 r
+  tx_fifo_inst/U95/Y (OA21X1_HVT)                         0.34       9.49 r
+  tx_fifo_inst/I2/rd_ptr_reg[5]/D (DFFARX1_HVT)           0.00       9.49 r
+  data arrival time                                                  9.49
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  tx_fifo_inst/I2/rd_ptr_reg[5]/CLK (DFFARX1_HVT)         0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.87
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[25]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U291/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U292/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U294/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[25]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[25]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[27]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U277/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U278/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U280/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[27]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[27]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[28]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U270/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U271/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U273/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[28]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[28]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[29]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U263/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U264/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U266/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[29]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[29]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[30]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U256/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U257/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U259/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[30]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[30]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[31]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U249/Y (AO22X1_HVT)                      0.58       8.84 r
+  qspi_ctrl_inst/U250/Y (NOR3X0_HVT)                      0.38       9.22 f
+  qspi_ctrl_inst/U252/Y (NAND3X0_HVT)                     0.12       9.34 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[31]/D (DFFARX1_HVT)
+                                                          0.00       9.34 r
+  data arrival time                                                  9.34
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[31]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.43      19.37
+  data required time                                                19.37
+  --------------------------------------------------------------------------
+  data required time                                                19.37
+  data arrival time                                                 -9.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.03
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[11]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U229/Y (AOI22X1_HVT)                     0.64       8.90 f
+  qspi_ctrl_inst/U232/Y (NAND3X0_HVT)                     0.12       9.02 r
+  qspi_ctrl_inst/U233/Y (AO21X1_HVT)                      0.23       9.25 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[11]/D (DFFARX1_HVT)
+                                                          0.00       9.25 r
+  data arrival time                                                  9.25
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[11]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.44      19.36
+  data required time                                                19.36
+  --------------------------------------------------------------------------
+  data required time                                                19.36
+  data arrival time                                                 -9.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.12
+
+
+  Startpoint: xip_arb_inst/xip_owns_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[13]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Qspi_Core          8000                  saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/xip_owns_reg/CLK (DFFARX1_HVT)             0.00 #     0.00 r
+  xip_arb_inst/xip_owns_reg/Q (DFFARX1_HVT)               0.96       0.96 r
+  U2494/Y (INVX2_HVT)                                     0.34       1.30 f
+  U2536/Y (INVX2_HVT)                                     0.39       1.69 r
+  U2854/Y (INVX2_HVT)                                     0.39       2.08 f
+  U2535/Y (AND2X1_HVT)                                    0.45       2.52 f
+  qspi_ctrl_inst/Addr_Line[0] (Qspi_Core)                 0.00       2.52 f
+  qspi_ctrl_inst/U9/Y (INVX0_HVT)                         0.16       2.68 r
+  qspi_ctrl_inst/U118/Y (NAND2X0_HVT)                     0.24       2.92 f
+  qspi_ctrl_inst/U119/Y (AO22X1_HVT)                      0.48       3.40 f
+  qspi_ctrl_inst/U121/Y (AOI22X1_HVT)                     0.36       3.76 r
+  qspi_ctrl_inst/U122/Y (OA221X1_HVT)                     0.38       4.14 r
+  qspi_ctrl_inst/U126/Y (NAND4X0_HVT)                     0.48       4.63 f
+  qspi_ctrl_inst/U133/Y (OAI21X1_HVT)                     0.75       5.38 r
+  qspi_ctrl_inst/U134/Y (NAND2X0_HVT)                     0.28       5.66 f
+  qspi_ctrl_inst/U159/Y (OA21X1_HVT)                      0.42       6.08 f
+  qspi_ctrl_inst/U160/Y (OA222X1_HVT)                     0.43       6.51 f
+  qspi_ctrl_inst/U167/Y (AND4X1_HVT)                      0.46       6.96 f
+  qspi_ctrl_inst/U170/Y (NAND2X0_HVT)                     0.27       7.23 r
+  qspi_ctrl_inst/U177/Y (NAND4X0_HVT)                     0.57       7.80 f
+  qspi_ctrl_inst/U4/Y (INVX2_HVT)                         0.46       8.26 r
+  qspi_ctrl_inst/U199/Y (AOI22X1_HVT)                     0.64       8.90 f
+  qspi_ctrl_inst/U202/Y (NAND3X0_HVT)                     0.12       9.02 r
+  qspi_ctrl_inst/U203/Y (AO21X1_HVT)                      0.23       9.25 r
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[13]/D (DFFARX1_HVT)
+                                                          0.00       9.25 r
+  data arrival time                                                  9.25
+
+  clock SCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  qspi_ctrl_inst/Tx_Reg/Shift_Reg_reg[13]/CLK (DFFARX1_HVT)
+                                                          0.00      19.80 r
+  library setup time                                     -0.44      19.36
+  data required time                                                19.36
+  --------------------------------------------------------------------------
+  data required time                                                19.36
+  data arrival time                                                 -9.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.12
+
+
+1

@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : qspi_Controller
+Version: S-2021.06-SP4
+Date   : Tue Sep 15 23:52:37 2026
+****************************************
+
+
+  Timing Path Group 'HCLK'
+  -----------------------------------
+  Levels of Logic:              10.00
+  Critical Path Length:          3.96
+  Critical Path Slack:           1.41
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'PCLK'
+  -----------------------------------
+  Levels of Logic:              12.00
+  Critical Path Length:          5.31
+  Critical Path Slack:           0.06
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'SCLK'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.02
+  Critical Path Slack:           1.78
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          5
+  Hierarchical Port Count:        241
+  Leaf Cell Count:              17836
+  Buf/Inv Cell Count:            1327
+  Buf Cell Count:                 247
+  Inv Cell Count:                1080
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     12046
+  Sequential Cell Count:         5790
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    28605.432129
+  Noncombinational Area: 41215.803916
+  Buf/Inv Area:           2000.621589
+  Total Buffer Area:           572.08
+  Total Inverter Area:        1428.54
+  Macro/Black Box Area:      0.000000
+  Net Area:              33721.400264
+  -----------------------------------
+  Cell Area:             69821.236045
+  Design Area:          103542.636309
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         18100
+  Nets With Violations:             5
+  Max Trans Violations:             1
+  Max Cap Violations:               4
+  -----------------------------------
+
+
+  Hostname: feserver.mirafra.com
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.50
+  Logic Optimization:                  2.43
+  Mapping Optimization:               17.15
+  -----------------------------------------
+  Overall Compile Time:               62.23
+  Overall Compile Wall Clock Time:    64.21
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

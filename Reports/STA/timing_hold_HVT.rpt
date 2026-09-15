@@ -1,0 +1,2109 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : qspi_Controller
+Version: S-2021.06-SP4
+Date   : Tue Sep 15 23:50:03 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v25c   Library: saed32hvt_ss0p75v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: ahb_xip_inst/state_reg[1]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_xip_inst/HRESP_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ahb_xip_inst/state_reg[1]/CLK (DFFARX1_HVT)             0.00       0.00 r
+  ahb_xip_inst/state_reg[1]/QN (DFFARX1_HVT)              0.53       0.53 f
+  U2986/Y (NAND4X0_HVT)                                   0.22       0.74 r
+  ahb_xip_inst/HRESP_reg[0]/D (DFFARX1_HVT)               0.00       0.74 r
+  data arrival time                                                  0.74
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ahb_xip_inst/HRESP_reg[0]/CLK (DFFARX1_HVT)             0.00       0.10 r
+  library hold time                                      -0.05       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: ahb_xip_inst/tmo_reg[14]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[14]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ahb_xip_inst/tmo_reg[14]/CLK (DFFARX1_HVT)              0.00       0.00 r
+  ahb_xip_inst/tmo_reg[14]/QN (DFFARX1_HVT)               0.47       0.47 f
+  U2950/Y (AO22X1_HVT)                                    0.28       0.75 f
+  ahb_xip_inst/tmo_reg[14]/D (DFFARX1_HVT)                0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ahb_xip_inst/tmo_reg[14]/CLK (DFFARX1_HVT)              0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: xip_rx_fifo_inst/I2/rd_ptr_reg[1]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/I2/rd_ptr_gray_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/I2/rd_ptr_reg[1]/CLK (DFFARX1_HVT)     0.00       0.00 r
+  xip_rx_fifo_inst/I2/rd_ptr_reg[1]/QN (DFFARX1_HVT)      0.47       0.47 f
+  U2795/Y (AO22X1_HVT)                                    0.28       0.75 f
+  xip_rx_fifo_inst/I2/rd_ptr_gray_reg[0]/D (DFFARX1_HVT)
+                                                          0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/I2/rd_ptr_gray_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: Ahb/sync_ff1_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: Ahb/reset_sync_n_reg
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Ahb/sync_ff1_reg/CLK (DFFARX1_HVT)                      0.00       0.00 r
+  Ahb/sync_ff1_reg/Q (DFFARX1_HVT)                        0.76       0.76 f
+  Ahb/reset_sync_n_reg/D (DFFARX1_HVT)                    0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Ahb/reset_sync_n_reg/CLK (DFFARX1_HVT)                  0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[6]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[6]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[6]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[6]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[6]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[6]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_cdc_inst/ACK_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_cdc_inst/ACK_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_cdc_inst/ACK_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)       0.00       0.00 r
+  xip_cdc_inst/ACK_2ff/ff1_reg[0]/Q (DFFARX1_HVT)         0.76       0.76 f
+  xip_cdc_inst/ACK_2ff/ff2_reg[0]/D (DFFARX1_HVT)         0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_cdc_inst/ACK_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)       0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_cdc_inst/DONE_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_cdc_inst/DONE_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_cdc_inst/DONE_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)      0.00       0.00 r
+  xip_cdc_inst/DONE_2ff/ff1_reg[0]/Q (DFFARX1_HVT)        0.76       0.76 f
+  xip_cdc_inst/DONE_2ff/ff2_reg[0]/D (DFFARX1_HVT)        0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_cdc_inst/DONE_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)      0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: coherency_inst/TOG_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: coherency_inst/TOG_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  coherency_inst/TOG_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)     0.00       0.00 r
+  coherency_inst/TOG_2ff/ff1_reg[0]/Q (DFFARX1_HVT)       0.76       0.76 f
+  coherency_inst/TOG_2ff/ff2_reg[0]/D (DFFARX1_HVT)       0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  coherency_inst/TOG_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)     0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[0]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[0]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[0]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[0]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[1]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[1]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[1]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[1]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[1]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[1]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[2]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[2]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[2]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[2]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[2]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[2]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[3]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[3]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[3]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[3]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[3]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[3]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[4]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[4]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[4]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[4]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[4]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[4]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s2/ff1_reg[5]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/s2/ff2_reg[5]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s2/ff1_reg[5]/CLK (DFFARX1_HVT)        0.00       0.00 r
+  xip_rx_fifo_inst/s2/ff1_reg[5]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s2/ff2_reg[5]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s2/ff2_reg[5]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: prefetch_inst/fill_idx_reg[6]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: prefetch_inst/fill_idx_reg[6]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  prefetch_inst/fill_idx_reg[6]/CLK (DFFARX1_HVT)         0.00       0.00 r
+  prefetch_inst/fill_idx_reg[6]/QN (DFFARX1_HVT)          0.48       0.48 f
+  U4062/Y (AO22X1_HVT)                                    0.29       0.77 f
+  prefetch_inst/fill_idx_reg[6]/D (DFFARX1_HVT)           0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  prefetch_inst/fill_idx_reg[6]/CLK (DFFARX1_HVT)         0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/I2/rd_ptr_reg[6]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: xip_rx_fifo_inst/I2/rd_ptr_gray_reg[5]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/I2/rd_ptr_reg[6]/CLK (DFFARX1_HVT)     0.00       0.00 r
+  xip_rx_fifo_inst/I2/rd_ptr_reg[6]/QN (DFFARX1_HVT)      0.48       0.48 f
+  U2800/Y (AO22X1_HVT)                                    0.29       0.77 f
+  xip_rx_fifo_inst/I2/rd_ptr_gray_reg[5]/D (DFFARX1_HVT)
+                                                          0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/I2/rd_ptr_gray_reg[5]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: prefetch_inst/fill_idx_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: prefetch_inst/fill_idx_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  prefetch_inst/fill_idx_reg[0]/CLK (DFFARX1_HVT)         0.00       0.00 r
+  prefetch_inst/fill_idx_reg[0]/QN (DFFARX1_HVT)          0.48       0.48 f
+  U4041/Y (AO22X1_HVT)                                    0.29       0.77 f
+  prefetch_inst/fill_idx_reg[0]/D (DFFARX1_HVT)           0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  prefetch_inst/fill_idx_reg[0]/CLK (DFFARX1_HVT)         0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: ahb_xip_inst/tmo_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_xip_inst/tmo_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ahb_xip_inst/tmo_reg[0]/CLK (DFFARX1_HVT)               0.00       0.00 r
+  ahb_xip_inst/tmo_reg[0]/QN (DFFARX1_HVT)                0.48       0.48 f
+  U2949/Y (AO22X1_HVT)                                    0.29       0.78 f
+  ahb_xip_inst/tmo_reg[0]/D (DFFARX1_HVT)                 0.00       0.78 f
+  data arrival time                                                  0.78
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ahb_xip_inst/tmo_reg[0]/CLK (DFFARX1_HVT)               0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: prefetch_inst/fifo_rd_en_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: prefetch_inst/rd_pipe_reg[0]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  prefetch_inst/fifo_rd_en_reg/CLK (DFFARX1_HVT)          0.00       0.00 r
+  prefetch_inst/fifo_rd_en_reg/Q (DFFARX1_HVT)            0.77       0.77 f
+  prefetch_inst/rd_pipe_reg[0]/D (DFFARX1_HVT)            0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  prefetch_inst/rd_pipe_reg[0]/CLK (DFFARX1_HVT)          0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.73
+
+
+  Startpoint: prefetch_inst/rd_pipe_reg[0]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: prefetch_inst/rd_pipe_reg[1]
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  prefetch_inst/rd_pipe_reg[0]/CLK (DFFARX1_HVT)          0.00       0.00 r
+  prefetch_inst/rd_pipe_reg[0]/Q (DFFARX1_HVT)            0.77       0.77 f
+  prefetch_inst/rd_pipe_reg[1]/D (DFFARX1_HVT)            0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  prefetch_inst/rd_pipe_reg[1]/CLK (DFFARX1_HVT)          0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.73
+
+
+  Startpoint: tx_fifo_inst/I1/wr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_gray_reg[2]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I1/wr_ptr_reg[3]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I1/wr_ptr_reg[3]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U66/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I1/wr_ptr_gray_reg[2]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I1/wr_ptr_gray_reg[2]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I1/wr_ptr_reg[4]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_gray_reg[3]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I1/wr_ptr_reg[4]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I1/wr_ptr_reg[4]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U67/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I1/wr_ptr_gray_reg[3]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I1/wr_ptr_gray_reg[3]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I1/wr_ptr_reg[5]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_gray_reg[4]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I1/wr_ptr_reg[5]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I1/wr_ptr_reg[5]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U68/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I1/wr_ptr_gray_reg[4]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I1/wr_ptr_gray_reg[4]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I1/wr_ptr_reg[6]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_gray_reg[5]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I1/wr_ptr_reg[6]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I1/wr_ptr_reg[6]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U69/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I1/wr_ptr_gray_reg[5]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I1/wr_ptr_gray_reg[5]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I1/wr_ptr_reg[7]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: tx_fifo_inst/I1/wr_ptr_gray_reg[6]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I1/wr_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I1/wr_ptr_reg[7]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U70/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I1/wr_ptr_gray_reg[6]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I1/wr_ptr_gray_reg[6]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I2/rd_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/I2/rd_ptr_gray_reg[2]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I2/rd_ptr_reg[3]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I2/rd_ptr_reg[3]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U81/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I2/rd_ptr_gray_reg[2]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I2/rd_ptr_gray_reg[2]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I2/rd_ptr_reg[4]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/I2/rd_ptr_gray_reg[3]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I2/rd_ptr_reg[4]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I2/rd_ptr_reg[4]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U82/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I2/rd_ptr_gray_reg[3]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I2/rd_ptr_gray_reg[3]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I2/rd_ptr_reg[7]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/I2/rd_ptr_gray_reg[6]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I2/rd_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I2/rd_ptr_reg[7]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U85/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I2/rd_ptr_gray_reg[6]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I2/rd_ptr_gray_reg[6]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: Apb/sync_ff1_reg
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: Apb/reset_sync_n_reg
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Apb/sync_ff1_reg/CLK (DFFARX1_HVT)                      0.00 #     0.00 r
+  Apb/sync_ff1_reg/Q (DFFARX1_HVT)                        0.76       0.76 f
+  Apb/reset_sync_n_reg/D (DFFARX2_HVT)                    0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Apb/reset_sync_n_reg/CLK (DFFARX2_HVT)                  0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: cdc_inst/ACK_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: cdc_inst/ACK_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cdc_inst/ACK_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)           0.00 #     0.00 r
+  cdc_inst/ACK_2ff/ff1_reg[0]/Q (DFFARX1_HVT)             0.76       0.76 f
+  cdc_inst/ACK_2ff/ff2_reg[0]/D (DFFARX1_HVT)             0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  cdc_inst/ACK_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)           0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: done_sync/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: done_sync/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  done_sync/ff1_reg[0]/CLK (DFFARX1_HVT)                  0.00 #     0.00 r
+  done_sync/ff1_reg[0]/Q (DFFARX1_HVT)                    0.76       0.76 f
+  done_sync/ff2_reg[0]/D (DFFARX1_HVT)                    0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  done_sync/ff2_reg[0]/CLK (DFFARX1_HVT)                  0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: error_sync/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: error_sync/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  error_sync/ff1_reg[0]/CLK (DFFARX1_HVT)                 0.00 #     0.00 r
+  error_sync/ff1_reg[0]/Q (DFFARX1_HVT)                   0.76       0.76 f
+  error_sync/ff2_reg[0]/D (DFFARX1_HVT)                   0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  error_sync/ff2_reg[0]/CLK (DFFARX1_HVT)                 0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[0]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[0]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[0]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[0]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[1]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[1]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[1]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[1]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[1]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[1]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[2]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[2]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[2]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[2]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[2]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[2]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[3]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[3]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[3]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[3]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[3]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[3]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[4]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[4]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[4]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[4]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[4]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[4]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[5]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[5]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[5]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[5]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[5]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[5]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[6]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[6]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[6]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[6]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[6]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[6]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: rx_fifo_inst/s2/ff1_reg[7]
+              (rising edge-triggered flip-flop clocked by PCLK)
+  Endpoint: rx_fifo_inst/s2/ff2_reg[7]
+            (rising edge-triggered flip-flop clocked by PCLK)
+  Path Group: PCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/s2/ff1_reg[7]/CLK (DFFARX1_HVT)            0.00 #     0.00 r
+  rx_fifo_inst/s2/ff1_reg[7]/Q (DFFARX1_HVT)              0.76       0.76 f
+  rx_fifo_inst/s2/ff2_reg[7]/D (DFFARX1_HVT)              0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/s2/ff2_reg[7]/CLK (DFFARX1_HVT)            0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_owns_at_start_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Glt_Done/q_reg
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_owns_at_start_reg/CLK (DFFARX1_HVT)                 0.00 #     0.00 r
+  xip_owns_at_start_reg/QN (DFFARX1_HVT)                  0.47       0.47 f
+  U2665/Y (AND2X1_HVT)                                    0.28       0.75 f
+  Glt_Done/q_reg/D (DFFARX1_HVT)                          0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Glt_Done/q_reg/CLK (DFFARX1_HVT)                        0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.69
+
+
+  Startpoint: xip_owns_at_start_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: Glt_Error/q_reg
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_owns_at_start_reg/CLK (DFFARX1_HVT)                 0.00 #     0.00 r
+  xip_owns_at_start_reg/QN (DFFARX1_HVT)                  0.47       0.47 f
+  U2534/Y (AND2X1_HVT)                                    0.28       0.75 f
+  Glt_Error/q_reg/D (DFFARX1_HVT)                         0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Glt_Error/q_reg/CLK (DFFARX1_HVT)                       0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.69
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[1]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[1]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[1]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U72/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[0]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[2]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[3]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[3]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U74/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[2]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[2]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[4]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[3]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[4]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[4]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U75/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[3]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[3]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[5]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[4]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[5]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[5]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U76/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[4]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[4]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[6]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[5]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[6]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[6]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U77/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[5]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[5]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: tx_fifo_inst/I2/rd_ptr_reg[7]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: tx_fifo_inst/I2/rd_ptr_gray_reg[6]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_1
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tx_fifo_inst/I2/rd_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  tx_fifo_inst/I2/rd_ptr_reg[7]/QN (DFFARX1_HVT)          0.47       0.47 f
+  tx_fifo_inst/U78/Y (AO22X1_HVT)                         0.28       0.75 f
+  tx_fifo_inst/I2/rd_ptr_gray_reg[6]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  tx_fifo_inst/I2/rd_ptr_gray_reg[6]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[1]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[1]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[1]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U71/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[0]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[3]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[2]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[3]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[3]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U73/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[2]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[2]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[4]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[3]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[4]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[4]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U74/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[3]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[3]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[5]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[4]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[5]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[5]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U75/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[4]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[4]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[6]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[5]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[6]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[6]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U76/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[5]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[5]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: rx_fifo_inst/I1/wr_ptr_reg[7]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: rx_fifo_inst/I1/wr_ptr_gray_reg[6]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+  Async_FIFO_DEPTH256_WIDTH8_0
+                     35000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  rx_fifo_inst/I1/wr_ptr_reg[7]/CLK (DFFARX1_HVT)         0.00 #     0.00 r
+  rx_fifo_inst/I1/wr_ptr_reg[7]/QN (DFFARX1_HVT)          0.47       0.47 f
+  rx_fifo_inst/U77/Y (AO22X1_HVT)                         0.28       0.75 f
+  rx_fifo_inst/I1/wr_ptr_gray_reg[6]/D (DFFARX1_HVT)      0.00       0.75 f
+  data arrival time                                                  0.75
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  rx_fifo_inst/I1/wr_ptr_gray_reg[6]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: xip_arb_inst/rx_count_reg[0]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: xip_arb_inst/rx_count_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_arb_inst/rx_count_reg[0]/CLK (DFFARX1_HVT)          0.00 #     0.00 r
+  xip_arb_inst/rx_count_reg[0]/QN (DFFARX1_HVT)           0.48       0.48 f
+  U3773/Y (AO22X1_HVT)                                    0.29       0.77 f
+  xip_arb_inst/rx_count_reg[0]/D (DFFARX1_HVT)            0.00       0.77 f
+  data arrival time                                                  0.77
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_arb_inst/rx_count_reg[0]/CLK (DFFARX1_HVT)          0.00       0.10 r
+  library hold time                                      -0.04       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: qspi/sync_ff1_reg
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: qspi/reset_sync_n_reg
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  qspi/sync_ff1_reg/CLK (DFFARX1_HVT)                     0.00 #     0.00 r
+  qspi/sync_ff1_reg/Q (DFFARX1_HVT)                       0.76       0.76 f
+  qspi/reset_sync_n_reg/D (DFFARX1_HVT)                   0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  qspi/reset_sync_n_reg/CLK (DFFARX1_HVT)                 0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: cdc_inst/REQ_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: cdc_inst/REQ_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cdc_inst/REQ_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)           0.00 #     0.00 r
+  cdc_inst/REQ_2ff/ff1_reg[0]/Q (DFFARX1_HVT)             0.76       0.76 f
+  cdc_inst/REQ_2ff/ff2_reg[0]/D (DFFARX1_HVT)             0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  cdc_inst/REQ_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)           0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_cdc_inst/REQLVL_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: xip_cdc_inst/REQLVL_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_cdc_inst/REQLVL_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00 #     0.00 r
+  xip_cdc_inst/REQLVL_2ff/ff1_reg[0]/Q (DFFARX1_HVT)      0.76       0.76 f
+  xip_cdc_inst/REQLVL_2ff/ff2_reg[0]/D (DFFARX1_HVT)      0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_cdc_inst/REQLVL_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_cdc_inst/REQ_2ff/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: xip_cdc_inst/REQ_2ff/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_cdc_inst/REQ_2ff/ff1_reg[0]/CLK (DFFARX1_HVT)       0.00 #     0.00 r
+  xip_cdc_inst/REQ_2ff/ff1_reg[0]/Q (DFFARX1_HVT)         0.76       0.76 f
+  xip_cdc_inst/REQ_2ff/ff2_reg[0]/D (DFFARX1_HVT)         0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_cdc_inst/REQ_2ff/ff2_reg[0]/CLK (DFFARX1_HVT)       0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+  Startpoint: xip_rx_fifo_inst/s1/ff1_reg[0]
+              (rising edge-triggered flip-flop clocked by SCLK)
+  Endpoint: xip_rx_fifo_inst/s1/ff2_reg[0]
+            (rising edge-triggered flip-flop clocked by SCLK)
+  Path Group: SCLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  qspi_Controller    70000                 saed32hvt_ss0p75v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  xip_rx_fifo_inst/s1/ff1_reg[0]/CLK (DFFARX1_HVT)        0.00 #     0.00 r
+  xip_rx_fifo_inst/s1/ff1_reg[0]/Q (DFFARX1_HVT)          0.76       0.76 f
+  xip_rx_fifo_inst/s1/ff2_reg[0]/D (DFFARX1_HVT)          0.00       0.76 f
+  data arrival time                                                  0.76
+
+  clock SCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  xip_rx_fifo_inst/s1/ff2_reg[0]/CLK (DFFARX1_HVT)        0.00       0.10 r
+  library hold time                                      -0.06       0.04
+  data required time                                                 0.04
+  --------------------------------------------------------------------------
+  data required time                                                 0.04
+  data arrival time                                                 -0.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.72
+
+
+1
