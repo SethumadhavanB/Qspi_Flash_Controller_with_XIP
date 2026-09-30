@@ -70,7 +70,7 @@ module Register_Bank(
     localparam ADDR_LENGTH  = 8'h18;
     localparam ADDR_DATA    = 8'h1C;
 
-    reg [16:0] reg_control;qedccccc
+    reg [16:0] reg_control;
     reg tx_pending;
     reg rx_pending;
     reg [7:0] rx_data_reg;
