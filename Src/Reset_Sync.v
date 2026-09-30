@@ -17,4 +17,5 @@ module Reset_Sync (
             reset_sync_n <= sync_ff1;
         end
     end
+endmodule
 
